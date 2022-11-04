@@ -4,7 +4,9 @@ import User from "./User";
 
 export const AppContext = createContext(null);
 
+//com o useContext, vc pode criar contexto globais"variaveis" globais que podem ser acessadas pelos componentes filhos
 function ContextTutorial() {
+  console.log()
   const [username, setUsername] = useState("");
 
   return (

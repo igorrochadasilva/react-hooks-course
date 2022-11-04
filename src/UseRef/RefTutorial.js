@@ -1,16 +1,14 @@
 import React, { useRef } from "react";
 
+//com o useRef, referenciamos um elemento do DOM ao qual queremos manipular
 function RefTutorial() {
   const inputRef = useRef(null);
 
-  const onClick = () => {
-    inputRef.current.value = "";
-  };
   return (
     <div>
       <h1>Pedro</h1>
       <input type="text" placeholder="Ex..." ref={inputRef} />
-      <button onClick={onClick}>Change Name</button>
+      <button onClick={() => (console.log(inputRef),inputRef.current.value = 'Pitanga')}>Change Name</button>
     </div>
   );
 }

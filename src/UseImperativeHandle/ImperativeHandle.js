@@ -7,6 +7,8 @@ function ImperativeHandle() {
     <div>
       <button
         onClick={() => {
+          console.log('Com isso podemos pegar a refencia do componente filho')
+          console.log(buttonRef)
           buttonRef.current.alterToggle();
         }}
       >
